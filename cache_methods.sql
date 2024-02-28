@@ -1,0 +1,15 @@
+create table if not exists cache_methods(
+cache_id integer not null,
+method_name varchar(255) null,
+cache_name varchar(255) null,
+template_used varchar(255) null,
+expired varchar(255) null,
+added_event varchar(255) null,
+evicted_event varchar(255) null,
+cache_condition varchar(255) null,
+reload_time varchar(255) null,
+cache_layer varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint cache_methods_pk primary key(cache_id));

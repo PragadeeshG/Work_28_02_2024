@@ -1,0 +1,16 @@
+create table if not exists eh_cache(
+cache_id integer not null,
+name varchar(255) null,
+expiry integer null,
+heap varchar(255) null,
+off_heap varchar(255) null,
+resources varchar(255) null,
+persistant char null,
+alias varchar(255) null,
+template varchar(255) null,
+has_listener char(255) null,
+listener_name varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint eh_cache_pk primary key(cache_id));

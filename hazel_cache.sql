@@ -1,0 +1,15 @@
+create table if not exists hazel_cache(
+cache_id integer not null,
+name varchar(255) null,
+resource varchar(255) null,
+ttl varchar(255) null,
+ttl_unit bigint null,
+expiry_unit bigint null,
+has_listener char null,
+listener_event varchar(255) null,
+event_name varchar(255) null,
+event_firing_mode varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint hazel_cache_pk primary key(cache_id));
